@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        #main>p {
+            color: #ccc;
+        }
+        #inside p {
+            background-color:aqua;
+
+        }
+        /* #main + p {
+            background-color:blue;
+        } */
+          #main ~ p {
+            background-color:rgb(233, 157, 17);
+        }
+
+        /* style for a special stateof element. */
+        a:link {
+            text-decoration: none; font font-size: 20px;
+        }
+        a:hover{
+            color:aquamarine; font-size: 25px ;
+        }
+        a:active{
+            color: cornflowerblue;
+        }
+    </style> -->
+    <style>
+        #main .odd{
+            color:rgb(24, 231, 58);
+        }
+        #main p:nth-child(even){
+            color:rgb(88, 19, 179);
+        }
+        #main p::first-letter{
+            color:blueviolet; font-size: 30px;
+        }
+        #main p::first-line {
+            background-color: aquamarine;
+        }
+        #main p::after {
+            content: "Read more";
+            color: red;
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main"> 
+        <p class="odd">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, reiciendis nulla sed inventore quo unde fugit minus officiis, eos quisquam perferendis maiores aut possimus enim suscipit repellat labore esse fugiat?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aut nisi officiis possimus reprehenderit cupiditate ipsum iure voluptates voluptas placeat obcaecati consequatur sit, recusandae ut saepe rem qui consectetur iste?</p>
+        <p class ="odd">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dicta. Cum consequatur iste, laborum maiores doloribus officia ea! Dolorem quos saepe voluptatum deserunt dolore soluta ex ratione quisquam porro eum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatibus dolor, fugiat provident magni impedit cum voluptatem reiciendis repellat ut molestiae suscipit cupiditate excepturi! Dicta, neque necessitatibus. Quis, tempore explicabo.</p>
+     <div id="inside">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis repudiandae nisi nobis unde delectus, provident earum placeat, cupiditate illum quae maxime similique est officia reiciendis, voluptates ut quasi architecto.</p>
+     </div>
+    </div>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt repudiandae vel sequi! At esse eius voluptates voluptatibus earum quis molestiae, quo vero. Quae optio laborum odit, facere autem itaque iste?</p>
+    
+    <a href="">visit the link</a>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sapiente recusandae vitae est alias dolore voluptatum, deleniti harum natus velit dolor aspernatur optio beatae ad, nostrum tenetur! Quis, magni et.
+    </p>
+
+
+
+    </body>
+</html>
