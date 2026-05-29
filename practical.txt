@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Form</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        .form-box{
+            width: 300px;
+            background-color: white;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+
+        #result{
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h2>Marks Form</h2>
+
+    <form onsubmit="showResult(event)">
+
+        <input type="number" id="s1" placeholder="Enter Maths Marks">
+
+        <input type="number" id="s2" placeholder="Enter Physics Marks">
+
+        <input type="number" id="s3" placeholder="Enter Chemistry Marks">
+
+        <input type="number" id="s4" placeholder="Enter English Marks">
+
+        <button type="submit">Calculate</button>
+
+    </form>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+function showResult(event){
+
+    event.preventDefault();
+
+    let s1 = Number(document.getElementById("s1").value);
+    let s2 = Number(document.getElementById("s2").value);
+    let s3 = Number(document.getElementById("s3").value);
+    let s4 = Number(document.getElementById("s4").value);
+
+    let total = s1 + s2 + s3 + s4;
+
+    let average = total / 4;
+
+    let percentage = (total / 400) * 100;
+    document.getElementById("result").innerHTML =
+
+
+    "Total Marks Scored out of 400 = " + total + "<br>" +
+    "Average = " + average + "<br>" +
+    "Percentage = " + percentage + "%";
+
+}
+
+</script>
+
+</body>
+</html>    
